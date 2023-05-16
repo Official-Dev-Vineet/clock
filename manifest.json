@@ -1,0 +1,7 @@
+{
+    "name":"digital clock",
+    "version":"1.0",
+    "description":"digital clock",
+    "short_name":"digital clock",
+    "manifest_version":2
+}

@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  color: aliceblue;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0 0 10px rgb(209, 74, 239);
+  background-image: url(clock.png);
+  background-size: cover;
+  background-position: center;
+}
+.clock::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #042039;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hour,
+.minute,
+.seconds {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(11, 7, 2);
+}
+.hour {
+  width: 5px;
+  height: 60px;
+  background-color: rgb(255, 47, 0);
+}
+.minute {
+  width: 3.5px;
+  height: 80px;
+  background-color: rgb(0, 106, 255);
+}
+.seconds {
+  width: 2px;
+  height: 90px;
+  background-color: rgb(128, 0, 79);
+}
+.digital-clock{
+    color: crimson;
+    font-size: 2rem;
+    position:absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: dotted 2px rgb(236, 81, 15);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
