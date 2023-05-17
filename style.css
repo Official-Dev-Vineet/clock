@@ -10,11 +10,13 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  color: aliceblue;
+  padding: 4rem;
 }
 .clock {
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  width: 50vw;
+  height: 50vw;
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
@@ -29,6 +31,7 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 50%;
+  border: 5px solid dodgerblue;
   background-color: #042039;
   top: 50%;
   left: 50%;
@@ -46,27 +49,30 @@ body {
 }
 .hour {
   width: 5px;
-  height: 60px;
+  height: 25%;
   background-color: rgb(255, 47, 0);
 }
 .minute {
   width: 3.5px;
-  height: 80px;
+  height: 30%;
   background-color: rgb(0, 106, 255);
 }
 .seconds {
   width: 2px;
-  height: 90px;
+  height: 35%;
   background-color: rgb(128, 0, 79);
 }
-.digital-clock{
-    color: crimson;
-    font-size: 2rem;
-    position:absolute;
-    bottom: -5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    border: dotted 2px rgb(236, 81, 15);
-    padding: 0.5rem;
-    border-radius: 1rem;
+.digital-clock {
+  /* color: crimson; */
+  font-size: 3rem;
+  position: absolute;
+  bottom: -7rem;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 2px #0676d8;
+  transform: translateX(-50%);
+  border: dotted 2px hsl(18, 88%, 49%);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-shadow: 1px 2px 5px #7d06d8, -2px -2px 40px rgb(163, 19, 108);
 }
